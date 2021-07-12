@@ -8,6 +8,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './post-create.component.html',
   styleUrls: ['./post-create.component.scss'],
 })
+
 export class PostCreateComponent {
   enteredTitle = '';
   enteredContent = '';
