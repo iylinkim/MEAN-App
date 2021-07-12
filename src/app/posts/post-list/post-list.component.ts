@@ -24,7 +24,7 @@ export class PostListComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log("destory")
+    // remove the subscription and prevent memory leak
     this.postSub.unsubscribe();
 
   }
