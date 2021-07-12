@@ -1,9 +1,7 @@
+import { Post } from './../post.model';
 import { Component, Input } from '@angular/core';
 
-interface Post {
-  title: string;
-  content: string;
-}
+
 
 @Component({
   selector: 'app-post-list',

@@ -1,3 +1,4 @@
+import { Post } from './posts/post.model';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -6,10 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  storedPosts:any = []
-  title = 'MEAN-app';
+  storedPosts:Post[] = []
 
-  onPostAdded(post:any){
+  onPostAdded(post:Post){
     this.storedPosts.push(post)
   }
 }
